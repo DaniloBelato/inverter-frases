@@ -1,0 +1,16 @@
+"""
+Aula de python unis-mg
+Prof.Alberane
+Aluno.Danilo Venancio Belato
+"""
+#funçao inverter as palavras
+def inverter(frase):
+    palavras = frase.split()  
+    palavras_invertidas = [palavra[::-1] for palavra in palavras]  
+    nova_frase = ' '.join(palavras_invertidas)  
+    return nova_frase
+
+# Exemplo
+frase = "Aula grupo unis, prof alberane"
+frase_invertida = inverter(frase)
+print(f"Frase invertida: {frase_invertida}")
